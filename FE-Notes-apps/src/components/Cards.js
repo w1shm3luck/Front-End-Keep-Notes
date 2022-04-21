@@ -13,25 +13,25 @@ function Cards() {
               src='images/img-9.jpg'
               text='You Can Write Notes Here'
               label='Showcase'
-              path='/services'
+              path='/application'
             />
             <CardItem
               src='images/img-2.jpg'
               text ='You Can Edit & Delete Notes'
               label='Showcase'
-              path='/services'
+              path='/application'
             />
-          </ul>
+          {/* </ul>
           <ul className='cards__items'>
             <CardItem
               src='images/img-3.jpg'
-              text='Notes-3'
+              text='Preview Notes'
               label='Showcase'
               path='/services'
             />
             <CardItem
               src='images/img-4.jpg'
-              text='Notes-4'
+              text='Preview '
               label='Showcase'
               path='/products'
             />
@@ -40,7 +40,7 @@ function Cards() {
               text='Notes-5'
               label='Showcase'
               path='/sign-up'
-            />
+            /> */}
           </ul>
         </div>
       </div>

@@ -68,8 +68,9 @@ function Footer() {
               <i class='fab fa-typo3' />
             </Link>
           </div>
-          <small class='website-rights'> © nida</small>
-          <small class='website-rights'> © allan</small>
+          <small class='website-rights'> work by © nida</small>
+          <small class='website-rights'> and</small>
+          <small class='website-rights'> work by © allan</small>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
