@@ -1,18 +1,16 @@
-// import React from 'react';
-// import '../../App.css';
-
-// export default function Products() {
-//   return <h1 className='application'>APPLICATION</h1>;
-// }
-
-import React, { Component }  from 'react';
+import React from 'react';
 import { useState, useEffect } from "react";
 import { nanoid } from "nanoid";
-import NotesList from "./NotesList";
-import Search from "./Search";
-import Header from "./Header";
+import '../../App.css';
+import '../index.css';
+import Header from '../applications/Header';
+import Search from '../applications/Search';
+import NotesList from '../applications/NotesList';
+// import Cards from '../Cards';
+// import HeroSection from '../HeroSection';
+// import Footer from '../Footer';
 
-const Application = () => {
+function Application() {
   const [notes, setNotes] = useState([
     {
       id: nanoid(),
@@ -61,7 +59,9 @@ const Application = () => {
   };
 
   return (
-    <div className={`${darkMode && "dark-mode"}`}>
+    <>
+      {/* <Header/> */}
+      <div className={`${darkMode && "dark-mode"}`}>
       <div className="container">
         <Header handleToggleDarkMode={setDarkMode} />
         <Search handleSearchNote={setSearchText} />
@@ -74,7 +74,8 @@ const Application = () => {
         />
       </div>
     </div>
+    </>
   );
-};
+}
 
 export default Application;
