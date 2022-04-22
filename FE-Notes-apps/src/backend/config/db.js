@@ -1,6 +1,13 @@
+// import {Sequelize} from 'sequelize';
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 // dotenv.config( options, {path:'./config/config.env'})
+
+// const connectdb = new Sequelize('notes_db','root','',{
+//   host: "localhost",
+//   dialect: "mongo"
+// });
+
 
 const connectDB = async () => {
   try {
@@ -14,3 +21,5 @@ const connectDB = async () => {
 }
 
 module.exports = connectDB
+// module.exports = connectdb
+
